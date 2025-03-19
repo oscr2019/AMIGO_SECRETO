@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background-color: #e0f7fa; /* Color de fondo suave para toda la página */
+            height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+            max-width: 600px; /* Maxima anchura del contenedor */
+        }
+        input {
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .sortear {
+            background-color: #007bff;
+        }
+        .sortear:hover {
+            background-color: #0056b3;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        li {
+            background: #f4f4f4;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #mensaje {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Amigo Secreto">
+        <h1>Amigo Secreto</h1>
+        <input type="text" id="nombreInput" placeholder="Ingresa un nombre">
+        <button onclick="agregarNombre()">Agregar</button>
+        <h3 id="mensaje"></h3>
+        <ul id="listaNombres"></ul>
+        <button class="sortear" onclick="sortearAmigo()">Sortear Amigo</button>
+        <h2 id="resultado"></h2>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
